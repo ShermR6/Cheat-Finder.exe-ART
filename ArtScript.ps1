@@ -10,7 +10,7 @@ _  /    __  __ \  _ \  __ `/  __/ __  /_   __  /__  __ \  __  /_  _ \_  ___/
 "@
 
 foreach ($char in $art.ToCharArray()) {
-    if ($char -match '[___]') {
+    if ($char -match '[_/\`,]') {
         Write-Host $char -ForegroundColor $red -NoNewline
     } else {
         Write-Host $char -ForegroundColor $white -NoNewline
