@@ -1,5 +1,5 @@
-$darkblue = [System.ConsoleColor]::DarkBlue
-$red = [System.ConsoleColor]::Red
+$blue = [System.ConsoleColor]::Blue
+$white = [System.ConsoleColor]::White
 
 $art = @"
                       ██▓███   ▄████▄      ▄████▄   ██░ ██ ▓█████  ▄████▄   ██ ▄█▀▓█████  ██▀███  
@@ -16,8 +16,8 @@ $art = @"
 
 foreach ($char in $art.ToCharArray()) {
     if ($char -match '[▒░▓]') {
-        Write-Host $char -ForegroundColor $darkblue -NoNewline
+        Write-Host $char -ForegroundColor $blue -NoNewline
     } else {
-        Write-Host $char -ForegroundColor $red -NoNewline
+        Write-Host $char -ForegroundColor $white -NoNewline
     }
 }
