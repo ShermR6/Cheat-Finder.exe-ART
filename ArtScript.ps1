@@ -1,4 +1,4 @@
-$red = [System.ConsoleColor]::Red
+$black = [System.ConsoleColor]::Black
 $white = [System.ConsoleColor]::White
 
 $padding = " " * 38  # Adjust the number for more or less padding
